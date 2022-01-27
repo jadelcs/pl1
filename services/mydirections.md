@@ -9,7 +9,7 @@ Be creative and use multiple parameters from the API documentation to earn a top
 ## Directions URL
 
 ```
-https://maps.googleapis.com/maps/api/directions/json?origin=CN+Tower&destination=Casa+Loma&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
+https://maps.googleapis.com/maps/api/directions/json?origin=place_id:ChIJmzrzi9Y0K4gRgXUc3sTY7RU&destination=place_id:ChIJ3flrK2IzK4gRsoLymGpVn1g&departure_time=now&mode=transit&transit_mode=subway&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
 ```
 
 ## Next paste the full JSON response to this query here:
@@ -24,233 +24,313 @@ https://maps.googleapis.com/maps/api/directions/json?origin=CN+Tower&destination
       },
       {
          "geocoder_status" : "OK",
-         "place_id" : "ChIJs6Elz500K4gRT1jWAsHIfGE",
-         "types" : [ "establishment", "museum", "point_of_interest", "tourist_attraction" ]
+         "place_id" : "ChIJ3flrK2IzK4gRsoLymGpVn1g",
+         "types" : [ "neighborhood", "political" ]
       }
    ],
    "routes" : [
       {
          "bounds" : {
             "northeast" : {
-               "lat" : 43.6785046,
-               "lng" : -79.3888881
+               "lat" : 43.6773281,
+               "lng" : -79.37910160000001
             },
             "southwest" : {
-               "lat" : 43.6427784,
-               "lng" : -79.4108392
+               "lat" : 43.642855,
+               "lng" : -79.41024299999999
             }
          },
          "copyrights" : "Map data ©2022 Google",
          "legs" : [
             {
+               "arrival_time" : {
+                  "text" : "2:08pm",
+                  "time_zone" : "America/Toronto",
+                  "value" : 1643310522
+               },
+               "departure_time" : {
+                  "text" : "1:40pm",
+                  "time_zone" : "America/Toronto",
+                  "value" : 1643308829
+               },
                "distance" : {
-                  "text" : "4.9 km",
-                  "value" : 4903
+                  "text" : "6.0 km",
+                  "value" : 5978
                },
                "duration" : {
-                  "text" : "17 mins",
-                  "value" : 1012
+                  "text" : "28 mins",
+                  "value" : 1693
                },
-               "end_address" : "1 Austin Terrace, Toronto, ON M5R 1X8, Canada",
+               "end_address" : "Casa Loma, Toronto, ON, Canada",
                "end_location" : {
-                  "lat" : 43.6784635,
-                  "lng" : -79.41006999999999
+                  "lat" : 43.6767841,
+                  "lng" : -79.41024299999999
                },
                "start_address" : "290 Bremner Blvd, Toronto, ON M5V 3L9, Canada",
                "start_location" : {
-                  "lat" : 43.6439336,
-                  "lng" : -79.3888881
+                  "lat" : 43.642855,
+                  "lng" : -79.38718730000001
                },
                "steps" : [
                   {
                      "distance" : {
-                        "text" : "0.4 km",
-                        "value" : 415
+                        "text" : "0.9 km",
+                        "value" : 854
                      },
                      "duration" : {
-                        "text" : "2 mins",
-                        "value" : 92
+                        "text" : "10 mins",
+                        "value" : 613
                      },
                      "end_location" : {
-                        "lat" : 43.6427784,
-                        "lng" : -79.3937866
+                        "lat" : 43.6458618,
+                        "lng" : -79.379192
                      },
-                     "html_instructions" : "Head \u003cb\u003ewest\u003c/b\u003e on \u003cb\u003eFront St W\u003c/b\u003e",
+                     "html_instructions" : "Walk to Union Station",
                      "polyline" : {
-                        "points" : "qekiGpspcNBRFb@BVHp@BNBRJr@NlAD\\@B\\nCb@hCF^TlAF`@v@~E"
+                        "points" : "{~jiG|hpcNIo@Ea@AIAMAS?U@]@_@Sg@ACAC?A?C?S?G?GKm@AGOaAEm@Gi@[]EGUWEGCECAC?A?KBGBYHi@NIBA?A??AAC?CAGE]CQE]CQU_Bm@yECWEUAMEYAG?AAA?AA?A?GBUFA?A??AA?Gk@YHA?A??AAA?ACMKcAQ_BGo@CUEYGo@S_BK{@Ea@e@NE@"
                      },
                      "start_location" : {
-                        "lat" : 43.6439336,
-                        "lng" : -79.3888881
+                        "lat" : 43.642855,
+                        "lng" : -79.38718730000001
                      },
-                     "travel_mode" : "DRIVING"
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "86 m",
+                              "value" : 86
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 62
+                           },
+                           "end_location" : {
+                              "lat" : 43.6429469,
+                              "lng" : -79.3861395
+                           },
+                           "html_instructions" : "Head \u003cb\u003eeast\u003c/b\u003e toward \u003cb\u003eThe PATH - Skywalk\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "{~jiG|hpcNIo@Ea@AIAMAS?U@]@_@"
+                           },
+                           "start_location" : {
+                              "lat" : 43.642855,
+                              "lng" : -79.38718730000001
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "0.5 km",
+                              "value" : 503
+                           },
+                           "duration" : {
+                              "text" : "6 mins",
+                              "value" : 356
+                           },
+                           "end_location" : {
+                              "lat" : 43.64499199999999,
+                              "lng" : -79.381638
+                           },
+                           "html_instructions" : "Continue onto \u003cb\u003eThe PATH - Skywalk\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "m_kiGjbpcNSg@ACAC?A?C?S?G?GKm@AGOaAEm@Gi@[]EGUWEGCECAC?A?KBGBYHi@NIBA?A??AAC?CAGE]CQE]CQU_Bm@yECWEUAMEYAG?AAA?AA?A?GBUFA?A??AA?Gk@"
+                           },
+                           "start_location" : {
+                              "lat" : 43.6429469,
+                              "lng" : -79.3861395
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "0.2 km",
+                              "value" : 239
+                           },
+                           "duration" : {
+                              "text" : "3 mins",
+                              "value" : 174
+                           },
+                           "end_location" : {
+                              "lat" : 43.6456412,
+                              "lng" : -79.37910160000001
+                           },
+                           "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eThe PATH - Union-VIA-GO\u003c/b\u003e",
+                           "maneuver" : "turn-left",
+                           "polyline" : {
+                              "points" : "elkiGffocNYHA?A??AAA?ACMKcAQ_BGo@CUEYGo@S_BK{@Ea@"
+                           },
+                           "start_location" : {
+                              "lat" : 43.64499199999999,
+                              "lng" : -79.381638
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "26 m",
+                              "value" : 26
+                           },
+                           "duration" : {
+                              "text" : "1 min",
+                              "value" : 21
+                           },
+                           "end_location" : {
+                              "lat" : 43.6458618,
+                              "lng" : -79.379192
+                           },
+                           "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eBay St.\u003c/b\u003e",
+                           "maneuver" : "turn-left",
+                           "polyline" : {
+                              "points" : "gpkiGjvncNe@NE@"
+                           },
+                           "start_location" : {
+                              "lat" : 43.6456412,
+                              "lng" : -79.37910160000001
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
                   },
                   {
                      "distance" : {
-                        "text" : "1.9 km",
-                        "value" : 1899
+                        "text" : "4.7 km",
+                        "value" : 4652
                      },
                      "duration" : {
-                        "text" : "8 mins",
-                        "value" : 486
+                        "text" : "12 mins",
+                        "value" : 697
                      },
                      "end_location" : {
-                        "lat" : 43.65916259999999,
-                        "lng" : -79.4002618
+                        "lat" : 43.6748552,
+                        "lng" : -79.40708099999999
                      },
-                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSpadina Ave.\u003c/b\u003e",
-                     "maneuver" : "turn-right",
+                     "html_instructions" : "Subway towards Yonge-University to Vaughan Metropolitan Centre Station",
                      "polyline" : {
-                        "points" : "k~jiGdrqcNa@Lm@PIBYHk@TG@w@Za@Lm@RYHkA\\E?kA\\w@VcBh@o@Tc@LeAZuBn@aBd@eBl@oA`@gBb@a@NaAXy@VaAXODuAb@wA^WHODw@TcCt@_Bb@[Ji@PQF]HkA^_Bd@cBf@gBd@wA`@s@RkGpBwAb@MBo@Nm@PCBE@C@C@KBy@VE@E@C@C?CAC?CACAAACAIE"
+                        "points" : "smkiGv_ocNoAh@ZfCJt@Dn@@r@Cn@Ed@Qx@Un@Yn@o@|@o@r@w@p@_Ap@_Aj@m@Zi@VA?yBhAuBjAkAr@kB|@{@^wBr@a@NsDhAoBn@oC|@MDkDfAeDhAA@GB{Bp@i@ReCv@A?yCfAoA^mA^eCx@WFeFbBE@kCx@}ARqA@}@@i@@q@?e@Ds@J_AL{@RcAV}@^{@`@_An@y@n@y@p@qA|@iAv@wE|Aq@TiAd@}Ar@mAv@c@f@Wr@Q|@I`A@`AJxAPlCZ~Ch@fEf@~DPrAfA~ILhAH|@H`AHjAAxAU~@]l@a@b@e@Vy@TaBd@_GdBKBwJrCuOvEA?Io@"
                      },
                      "start_location" : {
-                        "lat" : 43.6427784,
-                        "lng" : -79.3937866
+                        "lat" : 43.6452213,
+                        "lng" : -79.3806034
                      },
-                     "travel_mode" : "DRIVING"
+                     "transit_details" : {
+                        "arrival_stop" : {
+                           "location" : {
+                              "lat" : 43.6748552,
+                              "lng" : -79.40708099999999
+                           },
+                           "name" : "Dupont"
+                        },
+                        "arrival_time" : {
+                           "text" : "2:02pm",
+                           "time_zone" : "America/Toronto",
+                           "value" : 1643310139
+                        },
+                        "departure_stop" : {
+                           "location" : {
+                              "lat" : 43.6452213,
+                              "lng" : -79.3806034
+                           },
+                           "name" : "Union Station"
+                        },
+                        "departure_time" : {
+                           "text" : "1:50pm",
+                           "time_zone" : "America/Toronto",
+                           "value" : 1643309442
+                        },
+                        "headsign" : "Yonge-University to Vaughan Metropolitan Centre Station",
+                        "line" : {
+                           "agencies" : [
+                              {
+                                 "name" : "TTC",
+                                 "phone" : "1 (416) 393-4636",
+                                 "url" : "https://www.ttc.ca/"
+                              }
+                           ],
+                           "color" : "#f2bf14",
+                           "name" : "Line 1 Yonge–University",
+                           "short_name" : "1",
+                           "text_color" : "#000000",
+                           "vehicle" : {
+                              "icon" : "//maps.gstatic.com/mapfiles/transit/iw2/6/subway2.png",
+                              "name" : "Subway",
+                              "type" : "SUBWAY"
+                           }
+                        },
+                        "num_stops" : 8
+                     },
+                     "travel_mode" : "TRANSIT"
                   },
                   {
                      "distance" : {
-                        "text" : "0.2 km",
-                        "value" : 169
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 22
-                     },
-                     "end_location" : {
-                        "lat" : 43.6603089,
-                        "lng" : -79.40063689999999
-                     },
-                     "html_instructions" : "Slight \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eSpadina Crescent\u003c/b\u003e",
-                     "maneuver" : "turn-slight-right",
-                     "polyline" : {
-                        "points" : "wdniGrzrcNKQKQIGGGIEIGKCICOAE?C?C?C?C?C?C@A?EBC?CBE@C@CBEBEBEDGFEFCDEHCFELCFADCJEXAL"
-                     },
-                     "start_location" : {
-                        "lat" : 43.65916259999999,
-                        "lng" : -79.4002618
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "2.0 km",
-                        "value" : 2008
+                        "text" : "0.5 km",
+                        "value" : 472
                      },
                      "duration" : {
                         "text" : "6 mins",
-                        "value" : 332
+                        "value" : 382
                      },
                      "end_location" : {
-                        "lat" : 43.6774241,
-                        "lng" : -79.4081004
+                        "lat" : 43.6767841,
+                        "lng" : -79.41024299999999
                      },
-                     "html_instructions" : "Keep \u003cb\u003eright\u003c/b\u003e to continue on \u003cb\u003eSpadina Ave.\u003c/b\u003e",
-                     "maneuver" : "keep-right",
+                     "html_instructions" : "Walk to Casa Loma, Toronto, ON, Canada",
                      "polyline" : {
-                        "points" : "}kniG~|rcNAJAFCHCDCFEDEFIDEDQDkCt@_Cr@s@T}@V}Ad@QFaBb@}@VkA\\oA^c@L_AXYHm@PG@SHKDWL[TWTWVEDA@IFA@E@OJA?m@ZIRKD[L]HOFQF[JOBw@TuF`BgGfBoA\\{C|@}@XkA\\}Ab@sErA{Bp@u@Ru@R[JE@WH]Ja@LkAZwBn@wAb@C?]LgAZ"
+                        "points" : "ugqiGfftcNC@MDODOFOBYHcAZSDcBf@ODoA^C@]Jy@T@Rn@hDHf@TlA@LJl@HZBR"
                      },
                      "start_location" : {
-                        "lat" : 43.6603089,
-                        "lng" : -79.40063689999999
+                        "lat" : 43.67498920000001,
+                        "lng" : -79.4072396
                      },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "0.2 km",
-                        "value" : 172
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 37
-                     },
-                     "end_location" : {
-                        "lat" : 43.6768831,
-                        "lng" : -79.41010849999999
-                     },
-                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eDavenport Rd\u003c/b\u003e",
-                     "maneuver" : "turn-left",
-                     "polyline" : {
-                        "points" : "{vqiGrktcN@Lz@rE\\nBN~@"
-                     },
-                     "start_location" : {
-                        "lat" : 43.6774241,
-                        "lng" : -79.4081004
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "0.2 km",
-                        "value" : 169
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 25
-                     },
-                     "end_location" : {
-                        "lat" : 43.67824479999999,
-                        "lng" : -79.41080839999999
-                     },
-                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eWalmer Rd\u003c/b\u003e",
-                     "maneuver" : "turn-right",
-                     "polyline" : {
-                        "points" : "osqiGdxtcNOVIJEFCFKToA^y@R[HMDC@I??@G?G?CAC?EC"
-                     },
-                     "start_location" : {
-                        "lat" : 43.6768831,
-                        "lng" : -79.41010849999999
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "66 m",
-                        "value" : 66
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 10
-                     },
-                     "end_location" : {
-                        "lat" : 43.6785046,
-                        "lng" : -79.4100912
-                     },
-                     "html_instructions" : "\u003cb\u003eWalmer Rd\u003c/b\u003e turns slightly \u003cb\u003eright\u003c/b\u003e and becomes \u003cb\u003eAustin Terrace\u003c/b\u003e",
-                     "polyline" : {
-                        "points" : "_|qiGp|tcNECEECEACAECIAAEQMw@E_@"
-                     },
-                     "start_location" : {
-                        "lat" : 43.67824479999999,
-                        "lng" : -79.41080839999999
-                     },
-                     "travel_mode" : "DRIVING"
-                  },
-                  {
-                     "distance" : {
-                        "text" : "5 m",
-                        "value" : 5
-                     },
-                     "duration" : {
-                        "text" : "1 min",
-                        "value" : 8
-                     },
-                     "end_location" : {
-                        "lat" : 43.6784635,
-                        "lng" : -79.41006999999999
-                     },
-                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
-                     "maneuver" : "turn-right",
-                     "polyline" : {
-                        "points" : "s}qiG`xtcNFC"
-                     },
-                     "start_location" : {
-                        "lat" : 43.6785046,
-                        "lng" : -79.4100912
-                     },
-                     "travel_mode" : "DRIVING"
+                     "steps" : [
+                        {
+                           "distance" : {
+                              "text" : "0.3 km",
+                              "value" : 279
+                           },
+                           "duration" : {
+                              "text" : "4 mins",
+                              "value" : 238
+                           },
+                           "end_location" : {
+                              "lat" : 43.6773281,
+                              "lng" : -79.4081637
+                           },
+                           "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e on \u003cb\u003eSpadina Rd\u003c/b\u003e toward \u003cb\u003eMacpherson Ave\u003c/b\u003e",
+                           "polyline" : {
+                              "points" : "ugqiGfftcNC@MDODOFOBYHcAZSDcBf@ODoA^C@]Jy@T"
+                           },
+                           "start_location" : {
+                              "lat" : 43.67498920000001,
+                              "lng" : -79.4072396
+                           },
+                           "travel_mode" : "WALKING"
+                        },
+                        {
+                           "distance" : {
+                              "text" : "0.2 km",
+                              "value" : 193
+                           },
+                           "duration" : {
+                              "text" : "2 mins",
+                              "value" : 144
+                           },
+                           "end_location" : {
+                              "lat" : 43.6767841,
+                              "lng" : -79.41024299999999
+                           },
+                           "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eDavenport Rd\u003c/b\u003e",
+                           "maneuver" : "turn-left",
+                           "polyline" : {
+                              "points" : "ivqiG~ktcN@Rn@hDHf@TlA@LJl@HZBR"
+                           },
+                           "start_location" : {
+                              "lat" : 43.6773281,
+                              "lng" : -79.4081637
+                           },
+                           "travel_mode" : "WALKING"
+                        }
+                     ],
+                     "travel_mode" : "WALKING"
                   }
                ],
                "traffic_speed_entry" : [],
@@ -258,10 +338,12 @@ https://maps.googleapis.com/maps/api/directions/json?origin=CN+Tower&destination
             }
          ],
          "overview_polyline" : {
-            "points" : "qekiGpspcN|@fHhAzH|AnJsBl@mC`AgA\\kA\\E?cCt@sC~@aI~BuDnAiCr@mEpAuErAwHzBeDbAcKtC_IdCeBf@gBf@mA^SDOEECIEKQUYQMUKYEQ?M@SHSLWZSf@Mx@Kb@YZcHtBaFzAgN|D_A^s@j@]\\SLQJm@ZIRg@Rm@PuBl@ed@tMaJjC_HnBeBh@|@`Fl@nDOV_@p@sDbAUBUEQSMc@SwAFC"
+            "points" : "{~jiG|hpcNSiBAi@B}@Wo@?a@]_CMwAa@e@_@e@GAMBuA`@CAWoBwAyKEC_@JCAGk@YHA?A?k@gFe@_EQ}Ak@P~BxGoAh@f@|DFbBItAQx@Un@Yn@o@|@o@r@w@p@_Ap@_Aj@wAr@{BhAaE~BgD|A}L|D}CbAqIpCoDjAgCv@iFfBqMdEqCz@}ARqA@gBBwADsBX_Cj@yB`AyB~AkCnBiAv@wE|A{Bz@}Ar@mAv@c@f@Wr@Q|@I`A@`AJxAPlCZ~CpAfKxArLVfCRlCAxAU~@]l@a@b@e@Vy@TaJjC{[nJIo@Y^QFiAZwJrC@Rn@hD^tBLz@Ln@"
          },
-         "summary" : "Spadina Ave.",
-         "warnings" : [],
+         "summary" : "",
+         "warnings" : [
+            "Walking directions are in beta. Use caution – This route may be missing sidewalks or pedestrian paths."
+         ],
          "waypoint_order" : []
       }
    ],
