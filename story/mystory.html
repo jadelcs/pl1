@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- using template from simple map exercise -->
+<!-- source: https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-html -->
+
+<html>
+  <head>
+    <title>My Story</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+        #map {
+          height: 100%;
+        }
+
+        html,
+        body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+    </style>
+    <script>
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 43.6487, lng: -79.38544 },
+          zoom: 10,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h1>My Story</h1>
+    <p>something about my map</p>
+    <div id="map"></div>
+    <p>something else about my map</p>
+    
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
+    </script>
+  </body>
+</html>
