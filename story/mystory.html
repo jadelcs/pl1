@@ -40,35 +40,35 @@
         const tex = { lat: 29.426077387630365, lng: -98.48613331953025};
         const chi = { lat: 41.882595510278875, lng: -87.6225102844922};
 
-        const marker = new google.maps.Marker({
+        const markphil = new google.maps.Marker({
           position: phil,
           map,
-          title: "Click to zoom",
+          title: "PH",
         });
-        const marker = new google.maps.Marker({
+        const marktor = new google.maps.Marker({
           position: tor,
           map,
-          title: "Click to zoom",
+          title: "TO",
         });
-        const marker = new google.maps.Marker({
+        const markvan = new google.maps.Marker({
           position: van,
           map,
-          title: "Click to zoom",
+          title: "VR",
         });
-        const marker = new google.maps.Marker({
+        const markcali = new google.maps.Marker({
           position: cali,
           map,
-          title: "Click to zoom",
+          title: "CA",
         });
-        const marker = new google.maps.Marker({
+        const marktex = new google.maps.Marker({
           position: tex,
           map,
-          title: "Click to zoom",
+          title: "TX",
         });
-        const marker = new google.maps.Marker({
+        const markchi = new google.maps.Marker({
           position: chi,
           map,
-          title: "Click to zoom",
+          title: "CH",
         });
 
         map.addListener("center_changed", () => {
