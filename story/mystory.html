@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<!-- using template from simple map exercise -->
-<!-- source: https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-html -->
 
 <html>
   <head>
     <title>My Story</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
         h1 {
           font-family: Georgia, 'Times New Roman', Times, serif
         }
@@ -30,6 +26,7 @@
         }
     </style>
     <script>
+      
       function initMap() {
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 5,
@@ -47,6 +44,12 @@
             label: labels[i % labels.length],
           });
         });
+        // Add a marker clusterer to manage the markers.
+        new MarkerClusterer(map, markers, {
+          imagePath:
+            "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+        });
+      }
       const locations = [
       { lat: 49.758123, lng: -92.65349},
       { lat: 45.442046, lng: -78.820583},
