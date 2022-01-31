@@ -33,25 +33,26 @@
       let map;
 
       function initMap() {
-
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 3,
           center: {lat: 35.513834, lng: -152.517009}
         });
-        
+
         // used from Ontario Parks exercise
+        // Create an array of alphabetical characters used to label the markers.
+        const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
         const markers = locations.map((location, i) => {
           return new google.maps.Marker({
             position: location,
             label: labels[i % labels.length],
           });
         });
-
-        const locations = [
-          { lat: 43.64291350794583, lng: -79.38701424550148},
-          {lat: 14.598114, lng: 120.982938}
-        ];
-      }   
+      }
+      const locations = [
+        { lat: 43.64291350794583, lng: -79.38701424550148},
+        {lat: 14.598114, lng: 120.982938}
+      ];   
     </script>
   </head>
   <body>
