@@ -26,30 +26,30 @@
         }
     </style>
     <script>
-      
       function initMap() {
+        const myLatlng = { lat: -25.363, lng: 131.044 };
         const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 5,
-          center: { lat: 47.632226, lng: -82.288296 },
+          zoom: 4,
+          center: myLatlng,
         });
-        // Create an array of alphabetical characters used to label the markers.
-        const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        // Add some markers to the map.
-        // Note: The code uses the JavaScript Array.prototype.map() method to
-        // create an array of markers based on a given "locations" array.
-        // The map() method here has nothing to do with the Google Maps API.
-        const markers = locations.map((location, i) => {
-          return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length],
-          });
+        const marker = new google.maps.Marker({
+          position: myLatlng,
+          map,
+          title: "Click to zoom",
+        });
+
+        map.addListener("center_changed", () => {
+          // 3 seconds after the center of the map has changed, pan back to the
+          // marker.
+          window.setTimeout(() => {
+            map.panTo(marker.getPosition());
+          }, 3000);
+        });
+        marker.addListener("click", () => {
+          map.setZoom(8);
+          map.setCenter(marker.getPosition());
         });
       }
-      const locations = [
-      { lat: 49.758123, lng: -92.65349},
-      { lat: 45.442046, lng: -78.820583},
-      { lat: 48.17812017, lng: -90.22694426}
-      ];
     </script>
   </head>
   <body>
