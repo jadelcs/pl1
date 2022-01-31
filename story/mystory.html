@@ -32,25 +32,26 @@
     <script>
       function initMap() {
         const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 3,
-          center: {lat: 35.513834, lng: -152.517009}
+          zoom: 5,
+          center: { lat: 47.632226, lng: -82.288296 },
         });
-
-        // used from Ontario Parks exercise
         // Create an array of alphabetical characters used to label the markers.
         const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
+        // Add some markers to the map.
+        // Note: The code uses the JavaScript Array.prototype.map() method to
+        // create an array of markers based on a given "locations" array.
+        // The map() method here has nothing to do with the Google Maps API.
         const markers = locations.map((location, i) => {
           return new google.maps.Marker({
             position: location,
             label: labels[i % labels.length],
           });
         });
-      }
       const locations = [
-      { lat: 43.64291350794583, lng: -79.38701424550148},
-      {lat: 14.598114, lng: 120.982938}
-      ];   
+      { lat: 49.758123, lng: -92.65349},
+      { lat: 45.442046, lng: -78.820583},
+      { lat: 48.17812017, lng: -90.22694426}
+      ];
     </script>
   </head>
   <body>
