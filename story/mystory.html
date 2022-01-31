@@ -41,10 +41,13 @@
           zoom: 3,
           center: {lat: 35.513834, lng: -152.517009}
         });
-        const marker = new google.maps.Marker({
-          position: locations,
-          map,
-          title: "Click to zoom",
+        
+        // used from Ontario Parks exercise
+        const markers = locations.map((location, i) => {
+          return new google.maps.Marker({
+            position: location,
+            title: "Click to zoom",
+          });
         });
 
         map.addListener("center_changed", () => {
