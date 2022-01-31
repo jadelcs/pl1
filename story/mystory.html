@@ -9,6 +9,14 @@
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
+        h1 {
+          font-family: Georgia, 'Times New Roman', Times, serif
+        }
+
+        p {
+          font-family: 'Courier New', Courier, monospace;
+        }
+
         #map {
           height: 100%;
           width: 100%;
@@ -30,18 +38,12 @@
           zoom: 3,
         });
       }
-
-      function initMap(): void {
-        const myLatlng = { lat: 40.41679422199336, lng: -3.703790099660927 };
-
-        const map = new google.maps.Map(
-          document.getElementById("map") as HTMLElement,
-          {
-            zoom: 3,
-            center: myLatlng,
-          }
-        );
-
+      function initMap() {
+        const myLatlng = { lat: -25.363, lng: 131.044 };
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: myLatlng,
+        });
         const marker = new google.maps.Marker({
           position: myLatlng,
           map,
@@ -52,17 +54,14 @@
           // 3 seconds after the center of the map has changed, pan back to the
           // marker.
           window.setTimeout(() => {
-            map.panTo(marker.getPosition() as google.maps.LatLng);
+            map.panTo(marker.getPosition());
           }, 3000);
         });
-
         marker.addListener("click", () => {
           map.setZoom(8);
-          map.setCenter(marker.getPosition() as google.maps.LatLng);
+          map.setCenter(marker.getPosition());
         });
-      }
-
-      
+      }   
     </script>
   </head>
   <body>
