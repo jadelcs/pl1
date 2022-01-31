@@ -71,16 +71,34 @@
           title: "CH",
         });
 
-        map.addListener("center_changed", () => {
-          // 3 seconds after the center of the map has changed, pan back to the
-          // marker.
-          window.setTimeout(() => {
-            map.panTo(marker.getPosition());
-          }, 3000);
-        });
         marker.addListener("click", () => {
           map.setZoom(8);
-          map.setCenter(marker.getPosition());
+          map.setCenter(markphil.getPosition());
+        });
+
+        marker.addListener("click", () => {
+          map.setZoom(8);
+          map.setCenter(marktor.getPosition());
+        });
+
+        marker.addListener("click", () => {
+          map.setZoom(8);
+          map.setCenter(markvan.getPosition());
+        });
+
+        marker.addListener("click", () => {
+          map.setZoom(8);
+          map.setCenter(markcali.getPosition());
+        });
+
+        marker.addListener("click", () => {
+          map.setZoom(8);
+          map.setCenter(marktex.getPosition());
+        });
+
+        marker.addListener("click", () => {
+          map.setZoom(8);
+          map.setCenter(markchi.getPosition());
         });
       }
     </script>
