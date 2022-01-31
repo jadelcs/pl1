@@ -33,10 +33,7 @@
       let map;
 
       function initMap() {
-        const locations = [
-          { lat: -25.363, lng: 131.044 },
-          {lat: 40.41679422199336, lng: -3.703790099660927}
-        ];
+
         const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 3,
           center: {lat: 35.513834, lng: -152.517009}
@@ -50,17 +47,10 @@
           });
         });
 
-        map.addListener("center_changed", () => {
-          // 3 seconds after the center of the map has changed, pan back to the
-          // marker.
-          window.setTimeout(() => {
-            map.panTo(marker.getPosition());
-          }, 3000);
-        });
-        marker.addListener("click", () => {
-          map.setZoom(8);
-          map.setCenter(marker.getPosition());
-        });
+        const locations = [
+          { lat: 43.64291350794583, lng: -79.38701424550148 },
+          {lat: 14.598114, lng: 120.982938}
+        ];
       }   
     </script>
   </head>
