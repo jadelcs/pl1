@@ -171,10 +171,10 @@ function initMap() {
 
   // Add the circle for this city to the map.
   const philCircle = new google.maps.Circle({
-    strokeColor: "#FF0000",
+    strokeColor: "#0047B3",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#FF0000",
+    fillColor: "#0066FF",
     fillOpacity: 0.35,
     map,
     center: { lat: 14.597943, lng: 120.982735},
@@ -182,10 +182,10 @@ function initMap() {
   });
 
   const torCircle = new google.maps.Circle({
-    strokeColor: "#FF0000",
+    strokeColor: "#0047B3",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#FF0000",
+    fillColor: "0066FF",
     fillOpacity: 0.35,
     map,
     center: { lat: 43.64257734388785, lng: -79.3870584627254},
@@ -193,10 +193,10 @@ function initMap() {
   });
 
   const vanCircle = new google.maps.Circle({
-    strokeColor: "#FF0000",
+    strokeColor: "#0047B3",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#FF0000",
+    fillColor: "0066FF",
     fillOpacity: 0.35,
     map,
     center: { lat: 49.30420011346719, lng: -123.14409857068425},
@@ -204,10 +204,10 @@ function initMap() {
   });
 
   const caliCircle = new google.maps.Circle({
-    strokeColor: "#FF0000",
+    strokeColor: "#0047B3",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#FF0000",
+    fillColor: "0066FF",
     fillOpacity: 0.35,
     map,
     center: { lat: 33.8201796932808, lng: -117.9187555732683},
@@ -215,10 +215,10 @@ function initMap() {
   });
 
   const texCircle = new google.maps.Circle({
-    strokeColor: "#FF0000",
+    strokeColor: "#0047B3",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#FF0000",
+    fillColor: "0066FF",
     fillOpacity: 0.35,
     map,
     center: { lat: 29.426077387630365, lng: -98.48613331953025},
@@ -226,10 +226,10 @@ function initMap() {
   });
 
   const chiCircle = new google.maps.Circle({
-    strokeColor: "#FF0000",
+    strokeColor: "#0047B3",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#FF0000",
+    fillColor: "0066FF",
     fillOpacity: 0.35,
     map,
     center: { lat: 41.882595510278875, lng: -87.6225102844922},
