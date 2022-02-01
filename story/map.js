@@ -209,7 +209,7 @@ function initMap() {
 
     cityCircle.addListener("click", () => {
       map.setZoom(8);
-      map.setCenter(citymap[city].center).getPosition();
+      map.setCenter(cityCircle).getPosition();
       });
   }
 }
