@@ -238,31 +238,31 @@ function initMap() {
 
   philCircle.addListener("click", () => {
     map.setZoom(8);
-    map.setCenter(14.597943, 120.982735);
+    map.setCenter({ lat: 14.597943, lng: 120.982735});
   });
 
   torCircle.addListener("click", () => {
     map.setZoom(8);
-    map.setCenter(43.64257734388785, -79.3870584627254);
+    map.setCenter({ lat: 43.64257734388785, lng: -79.3870584627254});
   });
 
   vanCircle.addListener("click", () => {
     map.setZoom(8);
-    map.setCenter(49.30420011346719, -123.14409857068425);
+    map.setCenter({ lat: 49.30420011346719, lng: -123.14409857068425});
   });
   
   caliCircle.addListener("click", () => {
     map.setZoom(8);
-    map.setCenter(33.8201796932808, -117.9187555732683);
+    map.setCenter({ lat: 33.8201796932808, lng: -117.9187555732683});
   });
 
   texCircle.addListener("click", () => {
     map.setZoom(8);
-    map.setCenter(29.426077387630365, -98.48613331953025);
+    map.setCenter({ lat: 29.426077387630365, lng: -98.48613331953025});
   });
 
   chiCircle.addListener("click", () => {
     map.setZoom(8);
-    map.setCenter(41.882595510278875, -87.6225102844922);
+    map.setCenter({ lat: 41.882595510278875, lng: -87.6225102844922});
   });
 }
