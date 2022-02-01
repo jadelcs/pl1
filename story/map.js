@@ -127,4 +127,10 @@ function initMap() {
       radius: Math.sqrt((citymap[city].population)*10000) * 100,
     });
   }
+
+  phil.addListener("click", () => {
+  map.setZoom(8);
+  map.setCenter(phil.getPosition());
+  });
+
 }
