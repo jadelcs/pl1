@@ -246,7 +246,7 @@ function initMap() {
   philtexline.setMap(map);
 
   const philchiline = new google.maps.Polyline({
-    path: philtor,
+    path: philchi,
     geodesic: true,
     strokeColor: "#FF0000",
     strokeOpacity: 0.2,
