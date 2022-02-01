@@ -50,7 +50,7 @@ function initMap() {
       // 3 seconds after the center of the map has changed, pan back to the
       // marker.
       window.setTimeout(() => {
-        map.setZoom(3);
+        map.setZoom(3),
         map.setCenter(cntrLatLng.getPosition());
       }, 5000);
     });
