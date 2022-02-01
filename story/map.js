@@ -92,66 +92,66 @@ function initMap() {
 
   // Add the circle for this city to the map.
   const philCircle = new google.maps.Circle({
-    strokeColor: "#0047B3",
+    strokeColor: "#FF0000",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#0066FF",
-    fillOpacity: 0.25,
+    fillColor: "#FF0000",
+    fillOpacity: 0.2,
     map,
     center: { lat: 14.597943, lng: 120.982735},
     radius: Math.sqrt(100*100000) * 100,
   });
 
   const torCircle = new google.maps.Circle({
-    strokeColor: "#0047B3",
+    strokeColor: "#FF0000",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#0066FF",
-    fillOpacity: 0.25,
+    fillColor: "#FF0000",
+    fillOpacity: 0.2,
     map,
     center: { lat: 43.64257734388785, lng: -79.3870584627254},
     radius: Math.sqrt(50*100000) * 100,
   });
 
   const vanCircle = new google.maps.Circle({
-    strokeColor: "#0047B3",
+    strokeColor: "#FF0000",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#0066FF",
-    fillOpacity: 0.25,
+    fillColor: "#FF0000",
+    fillOpacity: 0.2,
     map,
     center: { lat: 49.30420011346719, lng: -123.14409857068425},
     radius: Math.sqrt(10*100000) * 100,
   });
 
   const caliCircle = new google.maps.Circle({
-    strokeColor: "#0047B3",
+    strokeColor: "#FF0000",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#0066FF",
-    fillOpacity: 0.25,
+    fillColor: "#FF0000",
+    fillOpacity: 0.2,
     map,
     center: { lat: 33.8201796932808, lng: -117.9187555732683},
     radius: Math.sqrt(10*100000) * 100,
   });
 
   const texCircle = new google.maps.Circle({
-    strokeColor: "#0047B3",
+    strokeColor: "#FF0000",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#0066FF",
-    fillOpacity: 0.25,
+    fillColor: "#FF0000",
+    fillOpacity: 0.2,
     map,
     center: { lat: 29.426077387630365, lng: -98.48613331953025},
     radius: Math.sqrt(5*100000) * 100,
   });
 
   const chiCircle = new google.maps.Circle({
-    strokeColor: "#0047B3",
+    strokeColor: "#FF0000",
     strokeOpacity: 0.8,
     strokeWeight: 2,
-    fillColor: "#0066FF",
-    fillOpacity: 0.25,
+    fillColor: "#FF0000",
+    fillOpacity: 0.2,
     map,
     center: { lat: 41.882595510278875, lng: -87.6225102844922},
     radius: Math.sqrt(5*100000) * 100,
