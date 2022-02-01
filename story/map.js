@@ -210,6 +210,6 @@ function initMap() {
 
   cityCircle.addListener("click", () => {
     map.setZoom(8);
-    map.setCenter(cityCircle).getPosition();
+    map.setCenter(citymap[city].center).getPosition();
     });
 }
