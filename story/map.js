@@ -4,6 +4,7 @@ function initMap() {
     zoom: 3,
     center: { lat: 36.648592, lng: -148.893669},
     mapTypeId: "terrain",
+    // used night mode coding to style map
     styles: [
       { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
       { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
@@ -186,4 +187,71 @@ function initMap() {
     map.setZoom(8);
     map.setCenter({ lat: 41.882595510278875, lng: -87.6225102844922});
   });
+  
+  const philtor = [
+    { lat: 14.597943, lng: 120.982735},
+    { lat: 43.64257734388785, lng: -79.3870584627254}
+  ];
+  const philvan = [
+    { lat: 14.597943, lng: 120.982735},
+    { lat: 49.30420011346719, lng: -123.14409857068425}
+  ];
+  const philcali = [
+    { lat: 14.597943, lng: 120.982735},
+    { lat: 33.8201796932808, lng: -117.9187555732683}
+  ];
+  const philtex = [
+    { lat: 14.597943, lng: 120.982735},
+    { lat: 29.426077387630365, lng: -98.48613331953025}
+  ];
+  const philchi = [
+    { lat: 14.597943, lng: 120.982735},
+    { lat: 41.882595510278875, lng: -87.6225102844922}
+  ];
+
+  const philtorline = new google.maps.Polyline({
+    path: philtor,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.2,
+    strokeWeight: 2,
+  });
+  philtorline.setMap(map);
+
+  const philvanline = new google.maps.Polyline({
+    path: philvan,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.2,
+    strokeWeight: 2,
+  });
+  philvanline.setMap(map);
+
+  const philcaliline = new google.maps.Polyline({
+    path: philcali,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.2,
+    strokeWeight: 2,
+  });
+  philcaliline.setMap(map);
+
+  const philtexline = new google.maps.Polyline({
+    path: philtex,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.2,
+    strokeWeight: 2,
+  });
+  philtexline.setMap(map);
+
+  const philchiline = new google.maps.Polyline({
+    path: philtor,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.2,
+    strokeWeight: 2,
+  });
+  philchiline.setMap(map);
+
 }
