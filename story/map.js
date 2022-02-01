@@ -80,27 +80,27 @@
 const citymap = {
   phil: {
     center: { lat: 14.597943, lng: 120.982735},
-    population: 2714856,
+    population: 100,
   },
   tor: {
     center: { lat: 43.64257734388785, lng: -79.3870584627254},
-    population: 8405837,
+    population: 50,
   },
   van: {
     center: { lat: 49.30420011346719, lng: -123.14409857068425},
-    population: 3857799,
+    population: 10,
   },
   cali: {
     center: { lat: 33.8201796932808, lng: -117.9187555732683},
-    population: 603502,
+    population: 10,
   },
   tex: {
     center: { lat: 29.426077387630365, lng: -98.48613331953025},
-    population: 603502,
+    population: 5,
   },
   chi: {
     center: { lat: 41.882595510278875, lng: -87.6225102844922},
-    population: 603502,
+    population: 5,
   },
 };
 
@@ -124,7 +124,7 @@ function initMap() {
       fillOpacity: 0.35,
       map,
       center: citymap[city].center,
-      radius: Math.sqrt(citymap[city].population) * 100,
+      radius: Math.sqrt((citymap[city].population)*10000) * 100,
     });
   }
 }
