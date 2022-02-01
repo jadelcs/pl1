@@ -1,8 +1,8 @@
 function initMap() {
-        
+    const cntrLatLng = { lat: 36.648592, lng: -148.893669};
     const map = new google.maps.Map(document.getElementById("map"), {
       zoom: 3,
-      center: { lat: 36.648592, lng: -148.893669},
+      center: cntrLatLng,
       mapTypeControlOptions: {
       mapTypeIds: ["roadmap", "satellite", "hybrid", "terrain", "styled_map"],
       },
@@ -44,6 +44,15 @@ function initMap() {
       position: chi,
       map,
       title: "CH",
+    });
+
+    map.addListener("center_changed", () => {
+      // 3 seconds after the center of the map has changed, pan back to the
+      // marker.
+      window.setTimeout(() => {
+        map.setZoom(3);
+        map.setCenter(cntrLatLng.getPosition());
+      }, 5000);
     });
 
     markphil.addListener("click", () => {
