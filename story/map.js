@@ -3,7 +3,6 @@ function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 3,
     center: { lat: 36.648592, lng: -148.893669},
-    mapTypeId: "terrain",
     // used night mode coding to style map
     styles: [
       { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
