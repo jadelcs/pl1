@@ -206,10 +206,10 @@ function initMap() {
       center: citymap[city].center,
       radius: Math.sqrt((citymap[city].population)*100000) * 100,
     });
-
-    cityCircle.addListener("click", () => {
-      map.setZoom(8);
-      map.setCenter(cityCircle).getPosition();
-      });
   }
+
+  cityCircle.addListener("click", () => {
+    map.setZoom(8);
+    map.setCenter(cityCircle).getPosition();
+    });
 }
