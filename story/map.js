@@ -78,20 +78,28 @@
 // }
 
 const citymap = {
-  chicago: {
-    center: { lat: 41.878, lng: -87.629 },
+  phil: {
+    center: { lat: 14.597943, lng: 120.982735},
     population: 2714856,
   },
-  newyork: {
-    center: { lat: 40.714, lng: -74.005 },
+  tor: {
+    center: { lat: 43.64257734388785, lng: -79.3870584627254},
     population: 8405837,
   },
-  losangeles: {
-    center: { lat: 34.052, lng: -118.243 },
+  van: {
+    center: { lat: 49.30420011346719, lng: -123.14409857068425},
     population: 3857799,
   },
-  vancouver: {
-    center: { lat: 49.25, lng: -123.1 },
+  cali: {
+    center: { lat: 33.8201796932808, lng: -117.9187555732683},
+    population: 603502,
+  },
+  tex: {
+    center: { lat: 29.426077387630365, lng: -98.48613331953025},
+    population: 603502,
+  },
+  chi: {
+    center: { lat: 41.882595510278875, lng: -87.6225102844922},
     population: 603502,
   },
 };
@@ -99,8 +107,8 @@ const citymap = {
 function initMap() {
   // Create the map.
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: { lat: 37.09, lng: -95.712 },
+    zoom: 3,
+    center: { lat: 36.648592, lng: -148.893669},
     mapTypeId: "terrain",
   });
 
