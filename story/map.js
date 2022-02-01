@@ -77,33 +77,6 @@
 //     });
 // }
 
-const citymap = {
-  phil: {
-    center: { lat: 14.597943, lng: 120.982735},
-    population: 100,
-  },
-  tor: {
-    center: { lat: 43.64257734388785, lng: -79.3870584627254},
-    population: 50,
-  },
-  van: {
-    center: { lat: 49.30420011346719, lng: -123.14409857068425},
-    population: 10,
-  },
-  cali: {
-    center: { lat: 33.8201796932808, lng: -117.9187555732683},
-    population: 10,
-  },
-  tex: {
-    center: { lat: 29.426077387630365, lng: -98.48613331953025},
-    population: 5,
-  },
-  chi: {
-    center: { lat: 41.882595510278875, lng: -87.6225102844922},
-    population: 5,
-  },
-};
-
 function initMap() {
   // Create the map.
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -194,22 +167,102 @@ function initMap() {
 
   // Construct the circle for each value in citymap.
   // Note: We scale the area of the circle based on the population.
-  for (const city in citymap) {
-    // Add the circle for this city to the map.
-    const cityCircle = new google.maps.Circle({
-      strokeColor: "#FF0000",
-      strokeOpacity: 0.8,
-      strokeWeight: 2,
-      fillColor: "#FF0000",
-      fillOpacity: 0.35,
-      map,
-      center: citymap[city].center,
-      radius: Math.sqrt((citymap[city].population)*100000) * 100,
-    });
-  }
+  // COULD NOT FOR THE LIFE OF ME MAKE THIS WORK WITH THE FOR LOOP IN EXAMPLE
 
-  cityCircle.addListener("click", () => {
+  // Add the circle for this city to the map.
+  const philCircle = new google.maps.Circle({
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#FF0000",
+    fillOpacity: 0.35,
+    map,
+    center: { lat: 14.597943, lng: 120.982735},
+    radius: Math.sqrt(100*100000) * 100,
+  });
+
+  const torCircle = new google.maps.Circle({
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#FF0000",
+    fillOpacity: 0.35,
+    map,
+    center: { lat: 43.64257734388785, lng: -79.3870584627254},
+    radius: Math.sqrt(50*100000) * 100,
+  });
+
+  const vanCircle = new google.maps.Circle({
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#FF0000",
+    fillOpacity: 0.35,
+    map,
+    center: { lat: 49.30420011346719, lng: -123.14409857068425},
+    radius: Math.sqrt(10*100000) * 100,
+  });
+
+  const caliCircle = new google.maps.Circle({
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#FF0000",
+    fillOpacity: 0.35,
+    map,
+    center: { lat: 33.8201796932808, lng: -117.9187555732683},
+    radius: Math.sqrt(10*100000) * 100,
+  });
+
+  const texCircle = new google.maps.Circle({
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#FF0000",
+    fillOpacity: 0.35,
+    map,
+    center: { lat: 29.426077387630365, lng: -98.48613331953025},
+    radius: Math.sqrt(5*100000) * 100,
+  });
+
+  const chiCircle = new google.maps.Circle({
+    strokeColor: "#FF0000",
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: "#FF0000",
+    fillOpacity: 0.35,
+    map,
+    center: { lat: 41.882595510278875, lng: -87.6225102844922},
+    radius: Math.sqrt(5*100000) * 100,
+  });
+
+  philCircle.addListener("click", () => {
     map.setZoom(8);
-    map.setCenter(citymap[city].center).getPosition();
-    });
+    map.setCenter(14.597943, 120.982735).getPosition();
+  });
+
+  torCircle.addListener("click", () => {
+    map.setZoom(8);
+    map.setCenter(43.64257734388785, -79.3870584627254).getPosition();
+  });
+
+  vanCircle.addListener("click", () => {
+    map.setZoom(8);
+    map.setCenter(49.30420011346719, -123.14409857068425).getPosition();
+  });
+  
+  caliCircle.addListener("click", () => {
+    map.setZoom(8);
+    map.setCenter(33.8201796932808, -117.9187555732683).getPosition();
+  });
+
+  texCircle.addListener("click", () => {
+    map.setZoom(8);
+    map.setCenter(29.426077387630365, -98.48613331953025).getPosition();
+  });
+
+  chiCircle.addListener("click", () => {
+    map.setZoom(8);
+    map.setCenter(41.882595510278875, -87.6225102844922).getPosition();
+  });
 }
