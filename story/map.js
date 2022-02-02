@@ -1,9 +1,10 @@
 function initMap() {
-  // Create the map.
+  // Create the map
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 3,
     center: { lat: 36.648592, lng: -148.893669},
-    // used night mode coding to style map
+    // style map to night mode
+    // code used from https://developers.google.com/maps/documentation/javascript/examples/style-array
     styles: [
       { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
       { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
@@ -86,11 +87,11 @@ function initMap() {
     ],
   });
 
-  // Construct the circle for each value in citymap.
-  // Note: We scale the area of the circle based on the population.
-  // COULD NOT FOR THE LIFE OF ME MAKE THIS WORK WITH THE FOR LOOP IN EXAMPLE
+  // draw circles on map
+  // code modified from https://developers.google.com/maps/documentation/javascript/examples/circle-simple
+  // I COULD NOT FOR THE LIFE OF ME MAKE THIS WORK WITH THE FOR LOOP IN EXAMPLE :(
+  // therefor the code is super long...
 
-  // Add the circle for this city to the map.
   const philCircle = new google.maps.Circle({
     strokeColor: "#FF0000",
     strokeOpacity: 0.8,
@@ -157,6 +158,8 @@ function initMap() {
     radius: Math.sqrt(5*100000) * 100,
   });
 
+  // zoom to city when circle is clicked
+  // code modified from https://developers.google.com/maps/documentation/javascript/examples/event-simple
   philCircle.addListener("click", () => {
     map.setZoom(8);
     map.setCenter({ lat: 14.597943, lng: 120.982735});
@@ -187,6 +190,10 @@ function initMap() {
     map.setCenter({ lat: 41.882595510278875, lng: -87.6225102844922});
   });
   
+  // draw polylines on map
+  // code modified from https://developers.google.com/maps/documentation/javascript/examples/polyline-simple
+  // I didn't understand how to make the flight paths all originate from one point with one list of coordinates
+  // so I made a new path for each polyline
   const philtor = [
     { lat: 14.597943, lng: 120.982735},
     { lat: 43.64257734388785, lng: -79.3870584627254}
