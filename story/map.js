@@ -2,7 +2,7 @@ function initMap() {
   // Create the map
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 3,
-    center: { lat: 36.648592, lng: -148.893669},
+    center: { lat: 46.163823, lng: -157.387559},
     // style map to night mode
     // code used from https://developers.google.com/maps/documentation/javascript/examples/style-array
     styles: [
